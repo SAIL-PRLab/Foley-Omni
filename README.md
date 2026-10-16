@@ -70,6 +70,8 @@ pip install "huggingface_hub[cli]>=0.30.0,<1.0"
 ## 📦 Download
 
 The released checkpoints are hosted at `https://huggingface.co/CocoBro/Foley-Omni`.
+The Foley-Omni checkpoint uses MIT; bundled third-party checkpoints retain their
+upstream terms. See [License](#license) before using or redistributing the package.
 Download the full checkpoint package with:
 
 ```bash
@@ -205,9 +207,26 @@ python inference.py --config-file inference_fusion.yaml
 - [ ] Release V2ST-Bench
 - [ ] Release Huggingface online demo
 
+# License
+
+- **Code:** Original Foley-Omni source code is released under
+  [Apache-2.0](LICENSE), except for third-party components that retain their
+  original licenses.
+- **Model weights:** The Foley-Omni checkpoint at
+  `ckpts/Foley-Omni/v2st.pth` is released under [MIT](MODEL_LICENSE), consistent
+  with the [Hugging Face model card](https://huggingface.co/CocoBro/Foley-Omni).
+  This grant covers rights held by the Foley-Omni contributors and does not
+  relicense third-party assets included in the download package.
+- **Third-party code, models, and data:** See
+  [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for component-specific
+  attribution, upstream terms, and training-data notes. In particular, the
+  vendored EDM2 utilities are **CC BY-NC-SA 4.0**, and MMAudio's upstream
+  Hugging Face checkpoints are **CC BY-NC 4.0**. The Foley-Omni licenses alone
+  do not authorize commercial use of every component in the complete pipeline.
+
 # Acknowledgements
 
 We would like to thank the following projects:
 
 - **[MMAudio](https://github.com/hkchengrex/MMAudio)**: Foley-Omni reuses MMAudio's audio VAE and feature extractor.
-- **[Ovi](https://github.com/Wan-Video/Ovi)** and **[Wan2.2](https://github.com/Wan-Video/Wan2.2)**: the DiT design and implementation are primarily developed with reference to Ovi and Wan2.2.
+- **[Ovi](https://github.com/character-ai/Ovi)** and **[Wan2.2](https://github.com/Wan-Video/Wan2.2)**: the DiT design and implementation are primarily developed with reference to Ovi and Wan2.2.
