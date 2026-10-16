@@ -1,0 +1,12 @@
+Foley-Omni
+Copyright (c) 2026 Foley-Omni contributors
+
+Original Foley-Omni source code is licensed under the Apache License,
+Version 2.0, except where third-party notices specify otherwise.
+The Foley-Omni checkpoint at ckpts/Foley-Omni/v2st.pth is licensed under
+the MIT License in MODEL_LICENSE, only to the extent of rights held by
+the Foley-Omni contributors.
+
+This repository includes third-party source code and uses third-party
+checkpoints. Their original copyright notices and licenses remain in
+effect. See THIRD_PARTY_NOTICES.md and third_party_licenses/.
